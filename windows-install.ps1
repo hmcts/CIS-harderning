@@ -1,5 +1,5 @@
 #install latest version of powershell
-Invoke-Expression "& { $(Invoke-RestMethod 'https://aka.ms/install-powershell.ps1') } -useMSI -EnablePSRemoting -Quiet -force" 
+Invoke-Expression "& { $(Invoke-RestMethod 'https://aka.ms/install-powershell.ps1') } -useMSI -EnablePSRemoting -Quiet" 
 
 invoke-expression 'cmd /c start pwsh.exe -Command {
 #Uninstall modules if exist to avoid conflict with older version of Powershell
